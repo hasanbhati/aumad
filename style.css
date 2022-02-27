@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#backvid {
+width: 100vw;
+height: 100vh;
+object-fit: cover;  
+position: fixed;
+right: 0;
+left: 0;
+top: 0;
+bottom: 0;
+z-index: -1;
+
+}
+
+
+header {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+min-height: 100vh;
+background-size: cover;
+background-position: center;
+position: relative;
+}
+
+/** now here i have styled h4 and h1, but it will effect all the h4s and h1s i have in future.
+how do i style just that specific h4 and h1.
+h4.Shortly and h1.Shortly is not working here **/
+
+h4{
+font-family: 'Syncopate', sans-serif;
+color: rgb(221, 215, 197);;
+text-transform: uppercase;
+line-height: 1.2;
+font-size: 2vw;
+text-align: center;
+}
+
+h1{
+font-family: 'Syncopate', sans-serif;
+color: rgb(221, 215, 197);;
+text-transform: uppercase;
+letter-spacing: 2vw;
+line-height: 1.2;
+font-size: 3vw;
+text-align: center;
+}
+
+/**countdown stuff**/
+.container {
+color: rgb(221, 215, 197);
+margin: 0 auto;
+text-align: center;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+li {
+display: inline-block;
+font-size: 1.5em;
+list-style-type: none;
+padding: 1em;
+text-transform: uppercase;
+
+}
+/** this will keep the titles of clock below the number **/
+li span {
+display: block;
+font-size: 4.5rem;
+}
+
